@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Styles/Lobby.uss?fileID=7433441132597879392&amp;guid=5b3c0ecdd2b351144a24982d412307e1&amp;type=3#Lobby" />
+    <Style src="project://database/Assets/Styles/Global.uss?fileID=7433441132597879392&amp;guid=3259316ff2d9d4745b1d7de910dec4eb&amp;type=3#Global" />
+    <ui:GroupBox name="lobby">
+        <ui:GroupBox name="lobbyHeader" style="flex-direction: row; justify-content: space-between; align-items: center; font-size: 24px;">
+            <ui:TextField picking-mode="Ignore" label="Text Field" value="Lobby Name" text="Lobby Name" name="lobbyNameTextField" class="hideLabel" style="width: 350px;" />
+            <ui:Label text="Lobby Code: AAAAAA" display-tooltip-when-elided="true" name="lobbyCodeLabel" />
+        </ui:GroupBox>
+        <ui:ScrollView name="playersScrollView" style="height: 280px;">
+            <ui:VisualElement name="playerRow" class="playerRow">
+                <ui:GroupBox name="playerNameGroupBox" class="playerNameGroupBox">
+                    <ui:IMGUIContainer class="hostIcon isHostIcon" />
+                    <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" text="Playername" class="hideLabel playerNameTextField" />
+                </ui:GroupBox>
+                <ui:Label text="Connecting..." display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:GroupBox name="lobbyFooter" style="flex-direction: row; align-items: center; justify-content: flex-end; font-size: 24px;">
+            <ui:Button text="Ready" display-tooltip-when-elided="true" name="readyButton" max-length="32" value="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" style="width: 200px;" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>

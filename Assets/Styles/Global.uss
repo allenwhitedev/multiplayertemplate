@@ -1,0 +1,3 @@
+.hideLabel > .unity-label {
+    display: none;
+}

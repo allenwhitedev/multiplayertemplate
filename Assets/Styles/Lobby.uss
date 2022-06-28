@@ -1,0 +1,20 @@
+.isHostIcon {
+    height: 32px;
+    width: 32px;
+}
+.hostIcon {
+    background-image: resource('Images/crownIcon');
+}
+.playerRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.playerNameGroupBox {
+    flex-direction: row;
+    align-items: center;
+}
+.playerNameTextField {
+    width: 300px;
+}

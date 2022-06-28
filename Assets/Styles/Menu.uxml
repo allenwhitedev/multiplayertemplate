@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Styles/Menu.uss?fileID=7433441132597879392&amp;guid=8ae7d094e1a25f94b8227b079b8e23d1&amp;type=3#Menu" />
+    <Style src="project://database/Assets/Styles/Global.uss?fileID=7433441132597879392&amp;guid=3259316ff2d9d4745b1d7de910dec4eb&amp;type=3#Global" />
+    <ui:GroupBox name="menu">
+        <ui:GroupBox name="menuHeader" style="flex-direction: row;">
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="networkStateLabel" />
+        </ui:GroupBox>
+        <ui:ScrollView name="lobbiesScrollView" style="height: 300px;" />
+        <ui:GroupBox name="menuFooter" style="flex-direction: row; align-items: center;">
+            <ui:Button display-tooltip-when-elided="true" name="fetchLobbiesButton" style="background-image: none; width: auto; height: auto; padding-left: 2px; padding-right: 2px; padding-top: 2px; padding-bottom: 2px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
+                <ui:IMGUIContainer style="background-image: url(&apos;project://database/Assets/Images/refreshIcon.png?fileID=2800000&amp;guid=a1dfe0267e7da8347a358f4fe0bb2e8e&amp;type=3#refreshIcon&apos;); width: 32px; height: 32px;" />
+            </ui:Button>
+            <ui:GroupBox name="joinLobbyByCodeGroupBox" style="flex-direction: row; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-right: 0;">
+                <ui:TextField picking-mode="Ignore" label="Text Field" text="Enter Lobby Code..." name="joinLobbyByCodeTextField" class="hideLabel joinLobbyByIdInput" style="margin-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; width: 240px;">
+                    <ui:Button text="Join" display-tooltip-when-elided="true" name="joinLobbyByCodeButton" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+                </ui:TextField>
+            </ui:GroupBox>
+            <ui:Button text="Create Lobby" display-tooltip-when-elided="true" name="createLobbyButton" />
+            <ui:Button text="Quick Join" display-tooltip-when-elided="true" name="quickJoinLobbyButton" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>
